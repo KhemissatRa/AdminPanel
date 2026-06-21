@@ -16,7 +16,7 @@ export default function Login() {
     setMessage("");
 
     try {
-      const response = await axios.post("https://backendoctoweb.onrender.com/admin/login", {
+      const response = await axios.post("https://backendoctoweb-1.onrender.com/admin/login", {
         email,
         password,
       });

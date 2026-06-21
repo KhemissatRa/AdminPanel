@@ -34,7 +34,7 @@ formData.append("Category", Category.trim());
 
     // 🔹 Use await here
     const response = await axios.post(
-      "https://backendoctoweb.onrender.com/product/",
+      "https://backendoctoweb-1.onrender.com/product/",
       formData,
       {
         headers: {

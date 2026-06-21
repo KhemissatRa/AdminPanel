@@ -11,7 +11,7 @@ const token=localStorage.getItem('token')
     const fetchOrders = async () => {
       try {
         if (!token) throw new Error("No token found — please log in first.");
-        const res = await axios.get("https://backendoctoweb.onrender.com/order/",    
+        const res = await axios.get("https://backendoctoweb-1.onrender.com/order/",    
         {  headers: { "x-auth-token": token }} // ✅ lowercase headers
         )          
 
@@ -25,7 +25,7 @@ const token=localStorage.getItem('token')
   }, []);
 const Delete=async(id)=>{
   try{
-  await axios.delete(`https://backendoctoweb.onrender.com/order/${id}`,   {
+  await axios.delete(`https://backendoctoweb-1.onrender.com/${id}`,   {
           headers: { "x-auth-token": token }, // ✅ lowercase headers
         })
   
@@ -39,7 +39,7 @@ const Delete=async(id)=>{
 }
 const updt = async (id) => {
   try {
-    await axios.put(`https://backendoctoweb.onrender.com/order/${id}`, { Done: true },   {
+    await axios.put(`https://backendoctoweb-1.onrender.com/${id}`, { Done: true },   {
           headers: { "x-auth-token": token }, // ✅ lowercase headers
         });
 
