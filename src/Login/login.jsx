@@ -57,7 +57,7 @@ export default function Login() {
               type="email"
               value={email}
               onChange={handlemailChange}
-              placeholder="Enter your email"
+              placeholder="example@email.com"
               className="w-full px-4 py-2 border border-gray-300 rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 transition-all duration-200"
               required
             />
@@ -70,7 +70,7 @@ export default function Login() {
               type="password"
               value={password}
               onChange={handlepassChange}
-              placeholder="Enter your password"
+              placeholder="password"
               className="w-full px-4 py-2 border border-gray-300 rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 transition-all duration-200"
               required
             />
